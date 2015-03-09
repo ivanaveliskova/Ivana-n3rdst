@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<script src="../../Build/Cesium/Cesium.js"></script>
+
+		<style>
+	      @import url(../../Build/Cesium/Widgets/widgets.css);
+	      html, body {
+	          width: 100%;
+	          height: 100%;
+	          margin: 0;
+	          padding: 0;
+	          overflow: hidden;
+	      }
+	      #container{
+	      	max-width: 1200px;
+	      	width: 90%;
+	      	margin: auto;
+	      }
+	      #cesiumContainer {
+	      	width: 76%;
+	      	float: right;
+	      }
+	      .places{
+	      	width: 30%;
+	      }
+	      button {
+	      	color: #77AAFF;
+	      	border: none;
+	      	background-color: #FFFFFF;
+	      	font-size: 16px;
+	      	cursor: pointer;
+	      }
+
+	      button:focus{
+	      	outline: none;
+	      }
+	      ul{
+	      	list-style: none;
+	      	margin: 50px 0;
+	      }
+	      li{
+	      	margin: 20px 0;
+	      }   
+	  	</style>
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="cesiumContainer"></div>
+			<!--Creates a list of Companies along N 3rd St that can be clicked to move towards a mapped location -->
+			<div class="places">
+				<ul>
+					<li><button id="cipherPrime" type="button">Cipher Prime</button></li>
+					<li><button id="cubistMediaGroup" type="button">Cubist Media Group</button></li>
+					<li><button id="cultivateTechnologies" type="button">Cultivate Technologies</button></li>
+					<li><button id="feltMedia" type="button">Felt Media</button></li>
+					<li><button id="isite" type="button">I-SITE</button></li>
+					<li><button id="jarvus" type="button">Jarvus</button></li>
+					<li><button id="messageFirst" type="button">MessageFirst</button></li>
+					<li><button id="seerInteractive" type="button">SEER Interactive</button></li>
+					<li><button id="webLinc" type="button">Weblinc</button></li>
+					<li><button id="wildBit" type="button">Wildbit, LLC</button></li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<script src="viewing.js"></script>
+	</body>
+
+</html>
